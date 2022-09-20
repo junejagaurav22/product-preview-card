@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: antiquewhite;
+  font-size: 14px;
+}
+.container {
+  min-height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+.card-content h3 {
+  padding: 10px 0px;
+  margin-top: 18px;
+  letter-spacing: 5px;
+  color: #9e9fa7;
+  font-size: 8px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.card-content-title h1 {
+  width: 10ch;
+  font-family: "Fraunces", serif;
+}
+
+.card-content-about {
+  padding: 20px 0px;
+  letter-spacing: 0.1px;
+  font-family: "Montserrat", sans-serif;
+  color: #9e9fa7;
+  width: 25ch;
+}
+
+.card-product-price {
+  color: #49826f;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Fraunces", serif;
+}
+
+.card-product-price h1 {
+  padding-right: 10px;
+}
+
+.card-product-price p {
+  color: #9e9fa7;
+  font-size: 12px;
+  text-decoration: line-through;
+}
+.add-to-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  background-color: #3d8168;
+  color: white;
+  border-radius: 10px;
+  width: 90%;
+  height: 50px;
+  font-family: "Montserrat", sans-serif;
+  border: 0px;
+  margin-bottom: 10px;
+}
+.add-to-cart img {
+  padding: 10px;
+}
+
+.add-to-cart:hover {
+  background-color: #1a4031;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .card{
+    width: 80%;
+    height: 100%;
+    flex-direction: column;
+  }
+  .card-img{
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+}
